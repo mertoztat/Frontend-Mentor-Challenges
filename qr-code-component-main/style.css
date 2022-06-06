@@ -53,8 +53,11 @@ body {
 
 /* footer bottom */
 .attribution {
+  position: absolute;
+  bottom: 2%;
   font-size: 11px;
   text-align: center;
+  width: 100%;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

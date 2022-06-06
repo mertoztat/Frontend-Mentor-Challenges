@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --darkBlue: hsl(229, 23%, 23%);
+  --grayishBlue: hsl(227, 10%, 46%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--darkCyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 40vh, left 70vw top 60vh;
+}
+
+.card-container {
+  width: 350px;
+  height: 380px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-header img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  width: 100px;
+  position: relative;
+  top: -50px;
+}
+
+.user-info {
+  text-align: center;
+  margin: -30px 0 15px;
+}
+
+.user-info span {
+  color: var(--grayishBlue);
+}
+
+.user-info p {
+  padding: 10px 0 5px;
+  font-size: 14px;
+  color: var(--grayishBlue);
+}
+
+.hr {
+  background-color: var(--grayishBlue);
+  width: 100%;
+  height: 1px;
+  opacity: 0.3;
+}
+
+.followers .likes {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0 7px;
+}
+
+.followers .small-likes {
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--grayishBlue);
+  letter-spacing: 1px;
+}
+.followers .small-likes span:nth-child(3) {
+  padding-left: 10px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2%;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
