@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background-color: var(--violet);
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.nav-logo {
+  padding: 50px 70px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  width: 100%;
+}
+
+.right-side {
+  margin: 80px;
+}
+
+.right-side h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  width: 600px;
+}
+
+.right-side p {
+  letter-spacing: 0.4px;
+  font-size: 18px;
+  width: 540px;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+
+.btn {
+  border: none;
+  font-size: 16px;
+  background-color: #fff;
+  color: var(--violet);
+  font-family: inherit;
+  padding: 12px 70px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: var(--magenta);
+  color: #fff;
+}
+
+.social-icons .icons {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  margin: 100px 50px 0 0;
+}
+
+.icons li {
+  list-style-type: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.fa-brands {
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.fa-brands:hover {
+  border: 2px solid var(--magenta);
+  color: var(--magenta);
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 60% 30%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .right-side {
+    margin: 20px 0;
+  }
+  .right-side h1 {
+    text-align: center;
+  }
+  .right-side p {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 20px;
+  }
+  .btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    margin: 40px 0;
+    width: 45%;
+    font-size: 18px;
+  }
+  .social-icons .icons {
+    margin: 0;
+  }
+}
