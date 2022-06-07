@@ -1,5 +1,7 @@
 # Frontend Mentor - Profile card component
 
+Click Live: https://profilecard-fmentors.netlify.app/
+
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
