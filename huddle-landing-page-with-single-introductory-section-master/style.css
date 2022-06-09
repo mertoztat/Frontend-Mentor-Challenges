@@ -32,7 +32,6 @@ nav img {
 
 .left-col img {
   max-width: 100%;
-  /* max-height: 100%; */
 }
 
 .right-col {
@@ -101,7 +100,7 @@ nav img {
   border: 1px solid var(--magenta);
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 900px) {
   .wrapper {
     display: flex;
     flex-direction: column;
