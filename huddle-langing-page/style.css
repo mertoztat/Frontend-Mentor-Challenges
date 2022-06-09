@@ -67,11 +67,16 @@ img {
   border-radius: 50px;
   border: none;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  font-size: 18px;
-  padding: 10px 50px;
-  color: var(--magenta);
+  font-size: 16px;
+  padding: 12px 50px;
+  color: var(--violet);
   cursor: pointer;
   margin: 20px 0;
+}
+
+.btn:hover {
+  background-color: var(--magenta);
+  color: #fff;
 }
 
 .social-links {
