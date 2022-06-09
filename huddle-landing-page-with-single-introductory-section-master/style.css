@@ -108,9 +108,13 @@ nav img {
     justify-content: center;
     align-items: center;
   }
-
   .right-col {
     width: 100%;
+  }
+  .btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
