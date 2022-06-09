@@ -18,58 +18,49 @@ body {
   background-image: url(./images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
 }
 
-.nav-logo {
-  padding: 50px 70px;
+nav img {
+  padding: 30px;
+  width: 250px;
 }
 
-.container {
+.wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  margin: 50px 100px;
 }
 
-.left-side img {
-  width: 100%;
+.left-col img {
+  max-width: 100%;
+  /* max-height: 100%; */
 }
 
-.right-side {
-  margin: 80px;
+.right-col {
+  width: 700px;
+  margin-left: 50px;
 }
 
-.right-side h1 {
+.right-col h1 {
+  margin-top: 30px;
+  font-size: 36px;
   font-family: "Poppins", sans-serif;
-  font-size: 45px;
-  width: 600px;
 }
 
-.right-side p {
-  letter-spacing: 0.4px;
+.right-col p {
+  line-height: 30px;
   font-size: 18px;
-  width: 540px;
-  line-height: 1.5;
-  padding-top: 20px;
+  margin: 25px 0px 20px;
 }
 
 .btn {
-  border: none;
-  font-size: 16px;
-  background-color: #fff;
+  padding: 10px 50px;
   color: var(--violet);
   font-family: inherit;
-  padding: 12px 70px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
-  text-align: center;
+  font-size: 15px;
+  border: none;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  margin-top: 25px;
-}
-
-.btn:focus {
-  outline: none;
 }
 
 .btn:hover {
@@ -77,63 +68,91 @@ body {
   color: #fff;
 }
 
-.social-icons .icons {
+.social-icons {
+  position: relative;
+}
+
+.icons {
   display: flex;
-  justify-content: flex-end;
-  text-align: center;
-  align-items: center;
-  margin: 100px 50px 0 0;
+  list-style-type: none;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
 }
 
 .icons li {
-  list-style-type: none;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   margin: 0 10px;
   cursor: pointer;
 }
 
-.fa-brands {
-  font-size: 20px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  padding: 12px;
+.icons li i {
+  font-size: 1.4rem;
 }
 
-.fa-brands:hover {
-  border: 2px solid var(--magenta);
+.icons li:hover {
   color: var(--magenta);
+  border: 1px solid var(--magenta);
+}
+
+@media (max-width: 1140px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-col {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   body {
     background-image: url(./images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-position: 60% 30%;
+    background-size: cover;
+    min-height: 100vh;
   }
-  .container {
-    flex-direction: column;
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .right-side {
-    margin: 20px 0;
+  nav img {
+    width: 200px;
   }
-  .right-side h1 {
-    text-align: center;
+  .left-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
   }
-  .right-side p {
-    font-size: 24px;
-    text-align: center;
-    margin: 0 20px;
+  .right-col {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .right-col h1 {
+    font-size: 26px;
   }
   .btn-section {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .btn {
-    margin: 40px 0;
-    width: 45%;
-    font-size: 18px;
-  }
-  .social-icons .icons {
-    margin: 0;
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: -20px 0;
   }
 }
