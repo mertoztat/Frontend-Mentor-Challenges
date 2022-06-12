@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --darkcyan: hsl(179, 100%, 13%);
+  --transparent: hsla(0, 0%, 100%, 0.75);
+  --darktransparent: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--darktransparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  width: 280px;
+  height: 500px;
+}
+
+.cards.orange {
+  background-color: var(--orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.cards.cyan {
+  background-color: var(--cyan);
+}
+
+.cards.darkcyan {
+  background-color: var(--darkcyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.card-icons {
+  padding: 30px;
+}
+
+.card-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  max-width: 255px;
+}
+
+.card-desc h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: var(--darktransparent);
+  letter-spacing: 0.7px;
+  margin-bottom: 25px;
+}
+.card-desc p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: var(--transparent);
+  line-height: 24px;
+  width: 210px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0 30px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn.btn-orange {
+  background-color: var(--transparent);
+  color: var(--orange);
+}
+
+.btn.btn-orange:hover,
+.btn.btn-cyan:hover,
+.btn.btn-darkcyan:hover {
+  border: 2px solid var(--darktransparent);
+  background-color: transparent;
+  color: var(--darktransparent);
+}
+
+.btn.btn-cyan {
+  background-color: var(--transparent);
+  color: var(--cyan);
+}
+
+.btn.btn-darkcyan {
+  background-color: var(--transparent);
+  color: var(--darkcyan);
+}
+
+@media (max-width: 768px) {
+  .cards.orange {
+    border-radius: 10px 10px 0 0;
+  }
+  .cards.darkcyan {
+    border-radius: 0 0 10px 10px;
+  }
+}
