@@ -13,7 +13,6 @@ if (currentTheme) {
 }
 
 // set & get localstorage dark-light theme
-
 function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
