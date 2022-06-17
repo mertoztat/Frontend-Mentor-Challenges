@@ -3,7 +3,6 @@ const check = document.getElementById("check");
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const currentTheme = localStorage.getItem("theme");
 
-// dark & light theme switch
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
 
@@ -14,6 +13,7 @@ if (currentTheme) {
 }
 
 // set & get localstorage dark-light theme
+
 function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
