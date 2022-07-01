@@ -25,6 +25,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.container .left-side .mobile-img {
+  display: none;
+}
 .container .left-side .logo {
   margin-bottom: 120px;
 }
@@ -124,6 +127,7 @@ body {
   }
   .container .left-side .mobile-img {
     width: 100%;
+    display: block;
   }
 }
 @media screen and (max-width: 480px) {
