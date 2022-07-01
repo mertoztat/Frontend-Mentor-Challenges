@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(0deg, 6%, 24%);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .left-side {
+  padding: 30px;
+  background: url("../images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container .left-side .logo {
+  margin-bottom: 120px;
+}
+.container .left-side h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+  letter-spacing: 3.5px;
+}
+.container .left-side h1 span {
+  font-weight: 600;
+  color: hsl(0deg, 6%, 24%);
+}
+.container .left-side .text {
+  color: hsl(0deg, 36%, 70%);
+  line-height: 1.7;
+  max-width: 450px;
+  margin: 30px 0;
+}
+.container .left-side .input {
+  position: relative;
+}
+.container .left-side .input input {
+  padding: 15px 25px;
+  border-radius: 50px;
+  width: 80%;
+  border: none;
+  border: 1px solid hsl(0deg, 36%, 70%);
+  color: hsl(0deg, 36%, 70%);
+  font-size: 16px;
+  position: relative;
+}
+.container .left-side .input input::-moz-placeholder {
+  color: hsl(0deg, 36%, 70%);
+  opacity: 0.7;
+  letter-spacing: 0.7px;
+}
+.container .left-side .input input:-ms-input-placeholder {
+  color: hsl(0deg, 36%, 70%);
+  opacity: 0.7;
+  letter-spacing: 0.7px;
+}
+.container .left-side .input input::placeholder {
+  color: hsl(0deg, 36%, 70%);
+  opacity: 0.7;
+  letter-spacing: 0.7px;
+}
+.container .left-side .input input:focus {
+  outline: none;
+  border: 2px solid hsl(0deg, 93%, 68%);
+}
+.container .left-side .input .btn {
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 80px;
+  transform: translateY(-5%);
+  background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.container .left-side .input .btn:hover {
+  background-image: linear-gradient(135deg, hsl(0deg, 80%, 92%), hsl(0deg, 74%, 84%));
+}
+.container .left-side .input .error {
+  position: absolute;
+  bottom: 50%;
+  left: 52%;
+  transform: translateY(10%);
+  display: none;
+}
+.container .left-side .input .error.active {
+  display: block;
+}
+.container .left-side .input span {
+  display: none;
+  padding: 15px 25px;
+  color: hsl(0deg, 93%, 68%);
+}
+.container .left-side .input span.active {
+  display: block;
+}
+.container .right-side img {
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .container .right-side img {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .left-side {
+    width: 100%;
+  }
+  .container .left-side .mobile-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .left-side {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .container .left-side .mobile-img img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .container .left-side h1 {
+    margin: 30px 0 20px 0;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .container .left-side .text {
+    max-width: 300px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container .left-side .input {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .container .left-side .input .btn {
+    position: absolute;
+    right: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
