@@ -18,6 +18,8 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
 .container .left-side {
   padding: 30px;
@@ -99,7 +101,7 @@ body {
   position: absolute;
   bottom: 50%;
   left: 52%;
-  transform: translateY(10%);
+  transform: translateY(-50%);
   display: none;
 }
 .container .left-side .input .error.active {
@@ -121,13 +123,35 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .container .left-side {
-    width: 100%;
+    padding: 0;
   }
   .container .left-side .mobile-img {
-    width: 100%;
     display: block;
+  }
+  .container .left-side .mobile-img img {
+    width: 100%;
+  }
+  .container .left-side .logo {
+    margin: 40px;
+  }
+  .container .left-side h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 20px 0;
+  }
+  .container .left-side .text {
+    text-align: center;
+  }
+  .container .left-side .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container .left-side .input .btn {
+    right: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -151,12 +175,6 @@ body {
     font-size: 0.9rem;
     text-align: center;
     margin: 0 auto;
-  }
-  .container .left-side .input {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
   .container .left-side .input .btn {
     position: absolute;

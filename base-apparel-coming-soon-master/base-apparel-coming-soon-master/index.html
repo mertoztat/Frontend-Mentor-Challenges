@@ -31,23 +31,33 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <div class="input">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email address"
-          />
-          <img class="error" src="./assets/images/icon-error.svg" alt="" />
-          <span class="error-message">Please Provide a valid mail</span>
-          <button class="btn">
-            <img src="./assets/images/icon-arrow.svg" alt="" />
-          </button>
-        </div>
+        <form id="form">
+          <div class="input">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+            />
+            <img
+              id="img-error"
+              class="error"
+              src="./assets/images/icon-error.svg"
+              alt=""
+            />
+            <span id="span-error" class="error-message"
+              >Please Provide a valid mail</span
+            >
+            <button class="btn" id="btn" type="submit">
+              <img src="./assets/images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+        </form>
       </div>
       <div class="right-side">
         <img src="./assets/images/hero-desktop.jpg" alt="" />
       </div>
     </section>
+    <script src="./assets/script.js"></script>
   </body>
 </html>

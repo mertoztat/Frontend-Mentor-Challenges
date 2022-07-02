@@ -5,6 +5,8 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
   .left-side {
     padding: 30px;
     background: url("../images/bg-pattern-desktop.svg");
@@ -81,7 +83,7 @@
         position: absolute;
         bottom: 50%;
         left: 52%;
-        transform: translateY(10%);
+        transform: translateY(-50%);
         display: none;
         &.active {
           display: block;
@@ -111,10 +113,32 @@
   }
   @include tablet {
     .left-side {
-      width: 100%;
+      padding: 0;
       .mobile-img {
-        width: 100%;
         display: block;
+        img {
+          width: 100%;
+        }
+      }
+      .logo {
+        margin: 40px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2.8rem;
+        margin: 20px 0;
+      }
+      .text {
+        text-align: center;
+      }
+      .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .btn {
+          right: 0;
+        }
       }
     }
   }
@@ -142,10 +166,6 @@
         margin: 0 auto;
       }
       .input {
-        margin: 20px 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
         .btn {
           position: absolute;
           right: 30px;
